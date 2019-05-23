@@ -2,7 +2,7 @@ spring:
   datasource:
     username: root
     password: root
-    url: jdbc:mysql://192.168.0.102:3306/SpringBoot_Mybatis_CRUD
+    url: jdbc:mysql://192.168.0.103:3306/SpringBoot_Mybatis_CRUD
     driver-class-name: com.mysql.cj.jdbc.Driver
     type: com.alibaba.druid.pool.DruidDataSource
     #   数据源其他配置
@@ -25,3 +25,6 @@ spring:
 mybatis:
   config-location: classpath:/mybatis/mybatis-config.xml
   mapper-locations: classpath:/mybatis/mapper/*.xml
+server:
+  servlet:
+    context-path: /WebApp
